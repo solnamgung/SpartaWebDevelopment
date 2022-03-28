@@ -90,11 +90,10 @@
         url: "http://spartacodingclub.shop/sparta_api/seoulair",
         data: {},
         success: function(response) {
-            let rows = response['RealtimeCityAir']['row'][11];
+            let rows = response['RealtimeCityAir']['row'];
                 let gu_name = rows['MSRSTE_NM'];
                 let gu_mise = rows['IDEX_MVL'];
                  console.log(gu_name, gu_mise);
-
         }
         })
 
